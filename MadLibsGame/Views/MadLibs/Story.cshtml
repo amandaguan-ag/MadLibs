@@ -1,0 +1,16 @@
+@model MadLibsGame.Models.MadLibs
+
+@{
+    ViewData["Title"] = "Story";
+}
+
+<h2>Your Mad Libs Story:</h2>
+
+<p>
+    One day, a(n) @Model.Adjective @Model.Noun went to the park. It decided to
+    @Model.Verb @Model.Adverb while everyone watched in amazement.
+</p>
+
+<p>
+    <a href="/form">Create another story!</a>
+</p>

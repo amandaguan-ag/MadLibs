@@ -1,0 +1,23 @@
+@model MadLibsGame.Models.MadLibs
+
+@{
+    ViewData["Title"] = "Form";
+}
+
+<h2>Fill in the blanks to create your Mad Libs story!</h2>
+
+<form action="/story" method="post">
+    <label for="noun">Noun:</label>
+    <input type="text" id="noun" asp-for="Noun" required />
+    <br />
+    <label for="verb">Verb:</label>
+    <input type="text" id="verb" asp-for="Verb" required />
+    <br />
+    <label for="adjective">Adjective:</label>
+    <input type="text" id="adjective" asp-for="Adjective" required />
+    <br />
+    <label for="adverb">Adverb:</label>
+    <input type="text" id="adverb" asp-for="Adverb" required />
+    <br />
+    <button type="submit">Create Story</button>
+</form>
